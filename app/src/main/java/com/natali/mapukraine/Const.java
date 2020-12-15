@@ -12,9 +12,15 @@ public class Const {
     public static final String KEY_SITE = "site";
     public static final String KEY_FOTO = "foto";
     public static final String KEY_HISTORY = "history";
-    public static final String CREATE_TABLE="create table if not exists " +TABLE_NAME+ "("+KEY_ID
-            +" integer primary key,"+ KEY_NAME + " text,"+ KEY_FOTO +" text,"
-            + KEY_CITY +" text,"+KEY_WORK_TIME+" text,"+KEY_SITE+" text,"+KEY_HISTORY+" text)";
+    public static final String CREATE_TABLE="create table if not exists " +
+            TABLE_NAME+ "("+
+            KEY_ID +" integer primary key,"+
+            KEY_NAME + " text," +
+            KEY_FOTO +" text," +
+            KEY_CITY +" text," +
+            KEY_WORK_TIME+" text," +
+            KEY_SITE+" text," +
+            KEY_HISTORY+" text)";
 
     public static final String INSERT_INTO="insert into "+TABLE_NAME+" ("+KEY_NAME+", "+KEY_FOTO+", "+KEY_CITY+", "+KEY_WORK_TIME
             +", "+KEY_SITE+", "+KEY_HISTORY+") values ";

@@ -36,7 +36,6 @@
             android:layout_marginEnd="208dp"
             android:layout_marginBottom="219dp"
             android:background="@color/colorButton"
-
             android:scaleType="fitStart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

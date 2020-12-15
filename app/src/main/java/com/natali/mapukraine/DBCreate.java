@@ -4,9 +4,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import android.util.Log;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class DBCreate extends AppCompatActivity {
+public class DBCreate{
 
     private String query_insert;
 
@@ -17,7 +16,6 @@ public class DBCreate extends AppCompatActivity {
             if (cursor.getInt (0) == 0) {
                     query_insert=Const.INSERT_INTO+Const.INSERT_VALUES;
                     db.execSQL(query_insert);
-
             }
         }
 
