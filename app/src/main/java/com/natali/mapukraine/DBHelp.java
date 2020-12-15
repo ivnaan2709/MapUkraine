@@ -1,11 +1,11 @@
 package com.natali.mapukraine;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 public class DBHelp extends SQLiteOpenHelper {
+
 
     public DBHelp(Context context) {
         super(context, Const.DATABASE_NAME, null, Const.DATABASE_VERSION);

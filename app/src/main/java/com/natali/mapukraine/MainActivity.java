@@ -2,6 +2,8 @@ package com.natali.mapukraine;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -18,8 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnRadomysl_Castle, btnDerzhprom, btnOlesko_castle, btnAkkerman_fortress;
 
     private DBHelp dbHelp;
-    private SQLiteDatabase sqLiteDatabase;
+    public SQLiteDatabase sqLiteDatabase;
     ConstraintLayout constraintLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,11 +92,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnOlesko_castle.setOnClickListener(this);
         btnAkkerman_fortress.setOnClickListener(this);
 
+
+
         dbHelp = new DBHelp(this);
         sqLiteDatabase = dbHelp.getWritableDatabase();
         DBCreate dbCreate=new DBCreate();
         dbCreate.InfoToDb(sqLiteDatabase);
-
+        new MyThread(sqLiteDatabase, dbHelp).start();
         dbHelp.close();
     }
 
