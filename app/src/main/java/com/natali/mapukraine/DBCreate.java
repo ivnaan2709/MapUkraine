@@ -27,6 +27,11 @@ public class DBCreate{
       }
         cursor.close();
 
+      readDB(db);
+
+    }
+
+    public void readDB(SQLiteDatabase db){
         Cursor cursorLog = db.query(Const.TABLE_NAME, null, null, null, null, null, null);
         if (cursorLog.moveToFirst()) {
             Const.idIndex = cursorLog.getColumnIndex(Const.KEY_ID);
@@ -45,13 +50,11 @@ public class DBCreate{
                         ", work time = " + cursorLog.getString(Const.timeIndex)+
                         ", site = " + cursorLog.getString(Const.siteIndex)+
                         ", history = " + cursorLog.getString(Const.historyIndex));
-
             } while (cursorLog.moveToNext());
         } else
             Log.d("mLog","0 rows");
 
         cursorLog.close();
-
     }
 
 
