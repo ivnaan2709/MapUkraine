@@ -11,8 +11,6 @@ public class DBCreate extends AppCompatActivity {
     private String query_insert;
 
     public void InfoToDb(SQLiteDatabase db){
-        db.execSQL("drop table if exists "+ Const.TABLE_NAME);
-        db.execSQL(Const.CREATE_TABLE);
         Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM "+ Const.TABLE_NAME, null);
         if (cursor != null) {
             cursor.moveToFirst();

@@ -19,8 +19,6 @@ public class Const {
     public static final String INSERT_INTO="insert into "+TABLE_NAME+" ("+KEY_NAME+", "+KEY_FOTO+", "+KEY_CITY+", "+KEY_WORK_TIME
             +", "+KEY_SITE+", "+KEY_HISTORY+") values ";
 
-    public static final String aksn="sdd";
-
     public static final String INSERT_VALUES=
                     "('Киево-Печерская лавра',"+R.drawable.kiev_pechersk_lavra+",'Киев', '06:00–20:00', 'https://lavra.ua', "+R.string.Kiev_Pechersk_Lavra+")," +
                     "('Площадь Независимости',"+R.drawable.maidan_nezalezhnosti+",'Киев', 'открыто 24 часа', 'Не существует',"+R.string.Independence_Square+")," +
@@ -31,7 +29,8 @@ public class Const {
                     "('Святогорская Успенская лавра',"+R.drawable.the_holy_mountains_lavra+",'г. Святогорск, Донецкая область', '06:00–23:00', 'http://svlavra.church.ua/peshhery/', "+R.string.Svyatogorsk_Assumption_Lavra+")," +
                     "('Старый замок Каменца-Подольского',"+R.drawable.kamianets_podilskyi_castle+",'г. Каменец-Подольский, Хмельницкая область', '09:00–17:00', 'http://muzeum.in.ua/obkti/ob%D1%94kt-1.html', "+R.string.The_old_castle_of_Kamyanets_Podilsky+")," +
                     "('Замок Шенборнов',"+R.drawable.schonborn_castle+",'Карпати, Закарпатська область', '08:30–16:30', 'http://sankarpaty.com/', "+R.string.Schоnborn_castle+")," +
-                    "('Остров Хортица',"+R.drawable.khortytsia+",'Запорожье', 'открыто 24 часа', 'https://ostriv.org',"+R.string.Khortytsya_Island+")," +
+//                    "('Остров Хортица',"+R.drawable.myphoto+",'Запорожье', 'открыто 24 часа', 'https://ostriv.org',"+R.string.Khortytsya_Island+")," +
+                    "('Остров Хортица',"+R.drawable.myphoto+",'Запорожье', 'Кафедра КСМ', 'КНТ-518',"+R.string.Khortytsya_Island+")," +
                     "('Костёл св. Андрея и монастырь бернардинцев',"+R.drawable.bernardine_church_interior+",'Львов', '09:00–18:00', 'Не существует', "+R.string.Bernardine_monastery+")," +
                     "('Мраморная пещера',"+R.drawable.marble_caves+",'Крым, массив Чатыр-Даг', '09:00–18:00', 'Не существует',"+R.string.Marble_cave+")," +
                     "('Озеро Синевир',"+R.drawable.lake_synevyr+",'Межгорье, Закарпатская область', 'открыто 24 часа', 'Не существует', "+R.string.Lake_Synevyr+")," +

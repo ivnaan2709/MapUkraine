@@ -3,6 +3,7 @@ package com.natali.mapukraine;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
@@ -44,7 +45,6 @@ public class Zoom extends ConstraintLayout implements ScaleGestureDetector.OnSca
         super(context, attrs, defStyle);
         init(context);
     }
-
 
     @SuppressLint("ClickableViewAccessibility")
     public void init(Context context) {
